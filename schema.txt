@@ -1,0 +1,99 @@
+user {
+
+    name : string
+    username : text unique
+    email : text unique
+    password : text
+    city: text
+    state: text
+    phone_no:
+
+
+}
+
+attraction {
+    _id :
+    name:
+    gallery : [{
+
+        url:
+        public_id
+    }]
+    admin_id : 
+    email:
+    place:
+    city:
+    state: 
+    latitude:
+    longitude:
+    categories: [],
+    rating:
+    reviews :[{
+        rating:
+        review:
+    }],
+    experiences: [{
+        activity: text
+        icons:
+        provider : [_id ]
+    }],
+    guides :[_id]
+   
+}
+
+hotels{
+    _id:
+    name:
+    owner_id:
+    gallery: [{
+        url:, 
+        public_id :,
+    }]
+    available_rooms:
+    cost_per_night:
+    address:
+    longitude:
+    latitude:
+    description:
+    contact:
+    offer : default 0
+    amenities: [],
+    ratings:
+    reviews:[{
+        user_id: _id
+        rating:,
+         feedback: text}
+         ],
+    complaints: [{
+        user_id:,
+        complaint: text,
+    }]     
+
+}
+
+
+service_providers{
+    _id:
+    name : string
+    username : text unique
+    email : text unique
+    password : text
+    city: text
+    state: text
+    phone_no:
+    service [{
+        type:hotels/attraction/etc...
+        subtype:hotel, river 
+        description:
+        _id 
+    }]
+
+}
+
+admin{
+    _id
+    username
+    email
+    password
+}
+
